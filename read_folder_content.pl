@@ -1,4 +1,5 @@
-#!/usr/bin/env perl -w
+#!/usr/bin/perl -w
+
 foreach(<./test/myfile*.txt>)
 {
 	print;
