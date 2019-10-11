@@ -3,8 +3,11 @@
 # source code : http://urlregex.com/
 # test file: https://mathiasbynens.be/demo/url-regex
 
-#my $filename = './SHOULD_NOT_MATCH';
 my $filename = './SHOULD_MATCH';
+if( $#ARGV >= 0 ) 
+{
+    $filename = $ARGV[0];
+}
 print("$filename\n");
  
 open(FH, '<', $filename) or die $!;
